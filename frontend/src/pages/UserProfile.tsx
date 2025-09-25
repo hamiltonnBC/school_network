@@ -117,27 +117,33 @@ export default function UserProfile() {
       {/* Error Alert */}
       {error && (
         <Alert.Root status="error" w="full">
-          <Alert.Icon />
-          <Alert.Title>Error loading profile</Alert.Title>
-          <Alert.Description>{error}</Alert.Description>
+          <Alert.Indicator />
+          <Alert.Content>
+            <Alert.Title>Error loading profile</Alert.Title>
+            <Alert.Description>{error}</Alert.Description>
+          </Alert.Content>
         </Alert.Root>
       )}
 
       {/* Save Error Alert */}
       {saveError && (
         <Alert.Root status="error" w="full">
-          <Alert.Icon />
-          <Alert.Title>Error saving profile</Alert.Title>
-          <Alert.Description>{saveError}</Alert.Description>
+          <Alert.Indicator />
+          <Alert.Content>
+            <Alert.Title>Error saving profile</Alert.Title>
+            <Alert.Description>{saveError}</Alert.Description>
+          </Alert.Content>
         </Alert.Root>
       )}
 
       {/* Success Alert */}
       {saveSuccess && (
         <Alert.Root status="success" w="full">
-          <Alert.Icon />
-          <Alert.Title>Profile saved successfully!</Alert.Title>
-          <Alert.Description>Your notification preferences have been updated.</Alert.Description>
+          <Alert.Indicator />
+          <Alert.Content>
+            <Alert.Title>Profile saved successfully!</Alert.Title>
+            <Alert.Description>Your notification preferences have been updated.</Alert.Description>
+          </Alert.Content>
         </Alert.Root>
       )}
 
