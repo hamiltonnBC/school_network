@@ -3,7 +3,7 @@ import { usersApi } from '../api/users'
 import { UserProfile, UserProfileFormData } from '../types'
 
 // For now, we'll use a hardcoded username. In a real app, this would come from auth context
-const CURRENT_USER = 'hamiltonn' // This matches the superuser created in backend
+const CURRENT_USER = 'nicholas_user' // This matches the user in the backend
 
 export function useUserProfile() {
   const [profile, setProfile] = useState<UserProfile | null>(null)

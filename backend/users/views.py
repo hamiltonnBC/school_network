@@ -5,6 +5,7 @@ from .models import UserProfile, UserOpportunityNotes, UserProfileSerializer, Us
 class UserProfileViewSet(viewsets.ModelViewSet):
     queryset = UserProfile.objects.all()
     serializer_class = UserProfileSerializer
+    lookup_field = 'username'
 
 
 class UserOpportunityNotesViewSet(viewsets.ModelViewSet):
